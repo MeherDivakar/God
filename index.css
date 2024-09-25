@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing:border-box;
+
+}
+h1{
+    color:blue;
+}
+.section{
+    margin: 0%;
+    padding: 0%;
+    color: aqua;
+}
+.join{
+    background-color: aquamarine;
+    color:brown;
+    box-sizing: border-box;
+    margin-left: 1400px;
+    justify-content: space-between;
+}
+.join:hover{
+overflow: none;
+background-color: beige;
+}
+.container{
+    display: flex;
+    gap: 20px;
+}
+.navbar{
+    color:blue;
+    background-color: black;
+    margin:0px;
+    padding:0px;
+    display:flex;
+
+}
+.sign{
+    box-sizing: border-box;
+    color:brown;
+    background-color: antiquewhite;
+    margin-left: 1400px;
+    justify-content: space-between;
+}
+.sign:hover{
+    overflow:none;
+    background-color: beige;
+}
+.card{
+    background-color: aqua;
+    border: 1px solid white;
+    height: 700px;
+    width:800px;
+    text-align:center;
+}
+.container .card img{
+    padding-left: 10px;
+    padding-right: 10px;
+    width:400px;
+    height:300px;
+}
