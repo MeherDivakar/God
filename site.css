@@ -1,0 +1,83 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color:white;
+}
+svg path:nth-child(1){
+    stroke-dasharray: 175px;
+    stroke-dashoffset: 175px;
+    animation: name 5s linear forwards;
+}
+svg path:nth-child(2){
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: name 5s linear forwards;
+}
+svg path:nth-child(3){
+    stroke-dasharray: 315px;
+    stroke-dashoffset: 315px;
+    animation: name 5s linear forwards;
+}
+svg path:nth-child(4){
+    stroke-dasharray: 200px;
+    stroke-dashoffset: 200px;
+    animation: name 5s linear forwards;
+}
+svg path:nth-child(5){
+    stroke-dasharray: 505px;
+    stroke-dashoffset: 505px ;
+    animation: name 5s linear forwards;
+}
+@keyframes name{
+    0%{
+    stroke-dashoffset:0;
+    }
+
+100%{
+    stroke-dashoffset: 100%;
+    stroke-dasharray: 0px;
+}
+}
+/*
+.b{
+    background-color: red;
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    animation: head 3s infinite;
+    position: relative;
+}
+@keyframes head{
+    0%{
+       top:0%;
+       left:0%;
+       background-color: red;
+    }
+    25%{
+        top:0px;
+        left: 80%;
+        background-color: white;
+    }
+    50%{
+        top: 500px;
+        left: 80%;
+        background-color: aqua;
+
+    }
+    75%{
+        top:500px;
+        left: 0%;
+        background-color: green;
+
+    }
+    100%{
+        top:0px;
+        left: 0%;
+        background-color: red;
+
+    }
+}
+    */
