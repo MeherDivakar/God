@@ -1,0 +1,112 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #111;
+    min-height: 100vh;
+    justify-content:center ;
+    align-items:center ;
+    display: flex;
+}
+.heart{
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 20px 90px red;
+    animation: h 3s linear infinite;
+    left: 19%;
+    z-index: 2;
+}
+.heart::before{
+    height: 70px;
+    width: 70px;
+    background-color:red;
+    top: -50%;
+    position: absolute;
+    content: '';
+    border-radius: 50px;
+    animation: h 3s linear infinite;
+}
+.heart::after{
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    right:-50%;
+    position: absolute;
+    content: '';
+    border-radius: 50px;
+    animation: h 3s linear infinite;
+}
+@keyframes h{
+    0%{
+   transform: rotate(-45deg) scale(1.09);
+   background-color: blueviolet;
+    }
+    50%{
+        background-color: green;
+    }
+    75%{
+        background-color: blueviolet;
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.00);
+        background-color: chartreuse;
+    }
+    100%{
+        transform: rotate(-45deg) scale(1.02);
+    }
+}
+.circle{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 2px solid skyblue;
+    animation: cir 3s linear infinite;
+    
+}
+@keyframes cir{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360);
+    }
+    0%{
+        border-color:blue ;
+    }
+    50%{
+        border-color: green;
+    }
+    75%{
+        border-color: blueviolet;
+    }
+}
+.square{
+    height: 500px;
+    width:500px;
+    background-color: black;
+    border: 2px solid blue;
+    animation: sq 3s linear infinite;
+    padding-left: 50px;
+    padding-top: 40px;
+}
+@keyframes sq{
+    0%{
+        transform: 90deg;
+        border-color:green;
+    }
+    50%{
+        border-color: yellow;
+    }
+    75%{
+        border-color: blueviolet;
+    }
+    100%{
+           background-color: none;
+    }
+}
